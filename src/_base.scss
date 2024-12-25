@@ -1,0 +1,7 @@
+/* make the customizations */
+$danger-color: tomato;
+$info-color: teal
+;
+
+/* import bootstrap to set changes */
+@use "../node_modules/bootstrap/scss/bootstrap";

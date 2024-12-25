@@ -1,0 +1,133 @@
+@use "base";
+
+#top-container{
+  padding: 32px;
+  
+}
+
+.loading-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item{
+  .nav-link {
+    color: lightgray;
+    background-color:transparent !important;
+  }
+
+  .nav-link:active{
+     background-color:transparent !important; 
+
+  }
+}
+
+#search{
+  padding: 0 16px;
+  color: #fff ;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
+  margin: 24px 20px;
+  line-height: 48px;
+  border-color: transparent;
+  border-radius: 8px;
+
+}
+
+#search::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+#song-list{
+  max-width: 440px;
+  max-height: 80vh;
+}
+
+.cover-img{
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.text-heading{
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+.text-subheading{
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+}
+
+.text-title{
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.text-sub{
+  font-size: 14px;
+  font-weight: 200;
+  color: white;
+}
+
+#song-scroll-view{
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+#player-img{
+  max-width: 440px;
+  height: 440px;
+  border-radius: 8px;
+}
+
+#player-container{
+  max-width:  440px;
+}
+
+.icon-container{
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.5;
+  border-radius: 50%;
+  display: grid;
+
+  svg{
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+.active-song{
+  background-color: rgba(255, 255, 255, 0.1);
+  // opacity: 0.5;  
+}
+
+.song-item{
+  padding: 20px;
+  border-radius: 8px;
+}
+
+$layout-breakpoint-small: 576px;
+
+@media (max-width: $layout-breakpoint-small) {
+  #top-container{
+    padding: 16px;
+  }
+  #player-container{
+    height: 100vh;
+  }
+  #player-img{
+    max-width: 240px;
+    max-height: 240px;
+    
+  }
+}
